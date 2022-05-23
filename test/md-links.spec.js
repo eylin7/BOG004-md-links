@@ -20,13 +20,14 @@ describe('mdLinks', () => {
   it('debe ser una funcion', () => {
     expect(typeof mdLinks).toBe('function');
  });
-   it('debe retornar una promesa', () => {
+   it('debe retornar una promesa', (done) => {
     expect(mdLinks(processPath) instanceof Promise).toBeTruthy()
   });
  });
 
-it('debe retornar una promesa', () => {
+it('debe retornar una promesa',(done) => {
   return mdLinks(processPath).then((result)=> {
   expect(result).toEqual(arrayData);
+  
   })
 });
