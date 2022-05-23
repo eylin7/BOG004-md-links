@@ -3,5 +3,34 @@
   "version": "0.1.0",
   "engines": {
     "node": ">=14.x"
-  }
+  },
+  "bin": {
+    "md-links": "./cli.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.1",
+    "chalk": "^5.0.1",
+    "eslint": "^8.14.0",
+    "jest": "^28.1.0",
+    "node-fetch": "^2.6.7",
+    "readdirp": "^3.6.0"
+  },
+  "description": "## Índice",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eylin7/BOG004-md-links.git"
+  },
+  "author": "Eylin Urdaneta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eylin7/BOG004-md-links/issues"
+  },
+  "homepage": "https://github.com/eylin7/BOG004-md-links#readme"
 }
